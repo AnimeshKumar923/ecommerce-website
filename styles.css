@@ -1,0 +1,159 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700; /* Gold color on hover */
+}
+
+.hero {
+    background: url('https://i.postimg.cc/jj6zMY6d/45815cc2-77d1-4e20-9ea9-56c5212869e1.png') no-repeat center center/cover;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    text-align: center;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.services, .pricing, .contact {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 1200px; /* Center the content */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Service and Pricing Plan Cards */
+.service, .pricing-plan {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    flex: 1; /* Allow flex-grow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation effect */
+}
+
+.service:hover, .pricing-plan:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+    justify-content: space-between; /* Space between items */
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-plan {
+    text-align: center; /* Center text in pricing plans */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column; /* Column layout for form fields */
+    max-width: 600px; /* Center form */
+    margin: 0 auto; /* Center form */
+}
+
+label {
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff; /* Border color on focus */
+}
+
+/* Button Styles */
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .services, .pricing {
+        flex-direction: column; /* Stack items on small screens */
+    }
+
+    nav {
+        flex-direction: column; /* Stack navigation links */
+        margin-top: 20px;
+    }
+
+    nav a {
+        margin: 5px 0; /* Space between stacked links */
+    }
+}
