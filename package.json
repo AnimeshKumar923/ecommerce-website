@@ -1,0 +1,14 @@
+{
+  "name": "ecommerce-website",
+  "version": "1.0.0",
+  "description": "e-commerce website for minor project of semester 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Animesh Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
